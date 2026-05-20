@@ -11,7 +11,12 @@
         :root { --primary: #1a3c2e; --accent: #5ee88c; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; }
         .navbar { background: rgba(26, 60, 46, 0.98) !important; backdrop-filter: blur(12px); }
-        .section { padding: 120px 0; }
+        .section { padding: 100px 0; }
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
         .wa-float {
             position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white;
             width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center;
@@ -43,27 +48,38 @@
 <section class="section bg-dark text-white">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="display-5 fw-bold mb-4">Hubungi Kami</h2>
-                <p class="lead mb-5">Kami siap melayani konsultasi, pemesanan jasa penyulingan, dan penjualan minyak nilam premium.</p>
+            <div class="col-lg-10">
+                <h2 class="display-5 fw-bold text-center mb-5">Hubungi Kami</h2>
                 
                 <div class="row g-5">
-                    <div class="col-md-6">
-                        <div class="p-4 border border-light border-opacity-25 rounded-4">
-                            <i class="fas fa-map-marker-alt fa-3x text-success mb-3"></i>
-                            <h5>Alamat</h5>
-                            <p>Jl. Perkebunan Lahendong-Pinaras<br>
-                            Kel. Lahendong, Sulawesi Utara</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="p-4 border border-light border-opacity-25 rounded-4">
-                            <i class="fas fa-phone fa-3x text-success mb-3"></i>
-                            <h5>WhatsApp</h5>
-                            <p class="fs-4">+62 815-2785-3990</p>
-                            <a href="https://wa.me/6281527853990" target="_blank" class="btn btn-success btn-lg px-5 mt-3">
+                    <!-- Informasi Kontak -->
+                    <div class="col-lg-5">
+                        <div class="p-5 border border-light border-opacity-25 rounded-4 h-100">
+                            <h4 class="mb-4"><i class="fas fa-map-marker-alt text-success me-3"></i> Lokasi Kami</h4>
+                            <p><strong>Berusaha Penyulingan Minyak Nilam</strong><br>
+                            Jl. Perkebunan Lahendong-Pinaras<br>
+                            Kelurahan Lahendong, Kab. Tomohon / Minahasa, Sulawesi Utara</p>
+                            
+                            <h5 class="mt-5">Kontak</h5>
+                            <p class="fs-4 mb-4">+62 815-2785-3990</p>
+                            
+                            <a href="https://wa.me/6281527853990" target="_blank" class="btn btn-success btn-lg px-5">
                                 <i class="fab fa-whatsapp"></i> Chat WhatsApp
                             </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Peta -->
+                    <div class="col-lg-7">
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0!2d124.819!3d1.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTUnMDAuMCJOIDEyNMKwNDknMDAuMCJF!5e0!3m2!1sid!2sid!4v1740000000000" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -74,7 +90,6 @@
 
 <footer class="bg-black text-white py-5 text-center">
     <p>&copy; 2026 Berusaha - Jasa Penyulingan Minyak Nilam Premium Lahendong, Sulawesi Utara</p>
-    <p class="small">Semua hak dilindungi • Dibuat dengan dedikasi untuk produk Indonesia</p>
 </footer>
 
 <a href="https://wa.me/6281527853990" class="wa-float" target="_blank">
