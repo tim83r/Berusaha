@@ -1,98 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan - Berusaha</title>
-    <meta name="description" content="Layanan Penyulingan Minyak Nilam Premium Berusaha Lahendong">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        :root { --primary: #1a3c2e; --accent: #5ee88c; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; }
-        .navbar { background: rgba(26, 60, 46, 0.98) !important; backdrop-filter: blur(12px); }
-        .section { padding: 100px 0; }
-        .card-hover:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15)!important;
-            transition: all 0.4s;
-        }
-        .wa-float {
-            position: fixed; bottom: 25px; right: 25px; background: #25D366; color: white;
-            width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center;
-            justify-content: center; font-size: 32px; box-shadow: 0 8px 25px rgba(37,211,102,0.4); z-index: 1000;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tentang Berusaha - Penyulingan Minyak Nilam Premium dari Lahendong, Sulawesi Utara.">
+  <title>Tentang Kami - Berusaha Minyak Nilam Lahendong</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c83137');
+      background-size: cover;
+      background-position: center;
+    }
+    .earthy-green { color: #166534; }
+  </style>
 </head>
-<body>
+<body class="font-sans">
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold fs-3" href="index.html">BERUSAHA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
-                <li class="nav-item"><a class="nav-link active" href="layanan.html">Layanan</a></li>
-                <li class="nav-item"><a class="nav-link" href="proses.html">Proses</a></li>
-                <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
-                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
-            </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <i class="fas fa-leaf text-3xl earthy-green"></i>
+        <h1 class="text-2xl font-bold earthy-green">BERUSAHA</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="index.html" class="hover:text-green-700">Beranda</a>
+        <a href="tentang.html" class="text-green-700 font-medium">Tentang</a>
+        <a href="layanan.html" class="hover:text-green-700">Layanan</a>
+        <a href="proses.html" class="hover:text-green-700">Proses</a>
+        <a href="galeri.html" class="hover:text-green-700">Galeri</a>
+      </div>
+      <a href="https://wa.me/6281527853990" target="_blank"
+         class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium">
+        <i class="fab fa-whatsapp"></i> Hubungi Kami
+      </a>
     </div>
-</nav>
+  </nav>
 
-<section class="section bg-light">
-    <div class="container">
-        <h2 class="text-center fw-bold display-5 mb-5">Layanan Kami</h2>
-        <div class="row g-4">
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-hover h-100 border-0 shadow">
-                    <div class="card-body text-center p-5">
-                        <i class="fas fa-industry fa-4x text-success mb-4"></i>
-                        <h4>Jasa Penyulingan</h4>
-                        <p>Penyulingan minyak nilam menggunakan alat modern dengan hasil Patchouli Alcohol tinggi.</p>
-                        <strong class="text-success">Kapasitas hingga ratusan kg/hari</strong>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-hover h-100 border-0 shadow">
-                    <div class="card-body text-center p-5">
-                        <i class="fas fa-leaf fa-4x text-success mb-4"></i>
-                        <h4>Pengolahan Daun Nilam</h4>
-                        <p>Mulai dari pemilihan daun, fermentasi, pengeringan, hingga penyulingan lengkap.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="card card-hover h-100 border-0 shadow">
-                    <div class="card-body text-center p-5">
-                        <i class="fas fa-box fa-4x text-success mb-4"></i>
-                        <h4>Penjualan Minyak Nilam</h4>
-                        <p>Minyak nilam premium siap pakai (Retail & Bulk)</p>
-                        <p>Kemasan: 1 kg, 5 kg, 25 kg, 100 kg+</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Hero -->
+  <section class="hero-bg h-[70vh] flex items-center text-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-4">Tentang Berusaha</h2>
+      <p class="text-2xl">Penyulingan Minyak Nilam Premium Lahendong</p>
     </div>
-</section>
+  </section>
 
-<footer class="bg-dark text-white py-4 text-center">
-    <p>&copy; 2026 Berusaha - Penyulingan Minyak Nilam Lahendong</p>
-</footer>
+  <!-- Isi Konten -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="prose prose-lg max-w-none">
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Berusaha adalah penyulingan minyak nilam premium yang berlokasi di Lahendong, Sulawesi Utara. 
+          Kami hadir dengan semangat <strong>"berusaha"</strong> untuk menghasilkan minyak nilam berkualitas tinggi 
+          melalui proses yang teliti dan teknologi penyulingan modern.
+        </p>
 
-<a href="https://wa.me/6281527853990" class="wa-float" target="_blank">
+        <h3 class="text-3xl font-bold earthy-green mt-12 mb-6">Keunggulan Kami</h3>
+        <ul class="grid md:grid-cols-2 gap-6 text-lg">
+          <li class="flex items-start gap-4">
+            <i class="fas fa-check-circle text-green-600 mt-1 text-xl"></i>
+            <span>Daun nilam pilihan dari perkebunan terbaik Lahendong</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-check-circle text-green-600 mt-1 text-xl"></i>
+            <span>Teknologi penyulingan steam terkini</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-check-circle text-green-600 mt-1 text-xl"></i>
+            <span>Patchouli Alcohol tinggi (Grade Ekspor)</span>
+          </li>
+          <li class="flex items-start gap-4">
+            <i class="fas fa-check-circle text-green-600 mt-1 text-xl"></i>
+            <span>Pelayanan profesional & transparan</span>
+          </li>
+        </ul>
+
+        <div class="mt-16 bg-green-50 p-10 rounded-3xl">
+          <h3 class="text-3xl font-bold earthy-green mb-6">Visi Kami</h3>
+          <p class="text-xl italic">
+            Menjadikan minyak nilam Lahendong sebagai salah satu yang terbaik di dunia dengan menjaga kualitas alam dan proses produksi yang berkelanjutan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Floating -->
+  <a href="https://wa.me/6281527853990" target="_blank"
+     class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl text-3xl z-50">
     <i class="fab fa-whatsapp"></i>
-</a>
+  </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold mb-2">BERUSAHA</p>
+      <p>Lahendong, Sulawesi Utara</p>
+      <p class="mt-6">© 2026 Berusaha. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
