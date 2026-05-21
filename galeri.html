@@ -3,59 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Galeri Berusaha - Foto proses penyulingan, perkebunan, dan produk minyak nilam premium Lahendong.">
+  <meta name="description" content="Galeri Berusaha - Foto perkebunan, proses penyulingan, dan produk minyak nilam premium Lahendong.">
   <title>Galeri - Berusaha Minyak Nilam Lahendong</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
-  <style>
-    .hero-bg {
-      background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a26');
-      background-size: cover;
-      background-position: center;
-    }
-    .earthy-green { color: #166534; }
-    .gallery-img {
-      transition: all 0.4s ease;
-    }
-    .gallery-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.15);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="font-sans">
 
   <!-- Navbar -->
- <!-- Navbar dengan Logo -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <!-- Logo -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="index.html" class="flex items-center gap-3">
-        <img src="assets/logo.png" alt="Berusaha Logo" 
-             class="h-12 w-auto">
+        <img src="assets/logo.png" alt="Berusaha Logo" class="h-12 w-auto">
         <h1 class="text-2xl font-bold earthy-green hidden sm:block">BERUSAHA</h1>
       </a>
+      
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="index.html" class="hover:text-green-700">Beranda</a>
+        <a href="tentang.html" class="hover:text-green-700">Tentang</a>
+        <a href="layanan.html" class="hover:text-green-700">Layanan</a>
+        <a href="proses.html" class="hover:text-green-700">Proses</a>
+        <a href="galeri.html" class="text-green-700 font-medium">Galeri</a>
+        <a href="kontak.html" class="hover:text-green-700">Kontak</a>
+      </div>
+      
+      <a href="https://wa.me/6281527853990" target="_blank" class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium btn-primary">
+        <i class="fab fa-whatsapp"></i> <span class="hidden sm:inline">Hubungi Kami</span>
+      </a>
     </div>
-    
-    <div class="hidden md:flex gap-8 text-lg">
-      <a href="index.html" class="hover:text-green-700">Beranda</a>
-      <a href="tentang.html" class="hover:text-green-700">Tentang</a>
-      <a href="layanan.html" class="hover:text-green-700">Layanan</a>
-      <a href="proses.html" class="hover:text-green-700">Proses</a>
-      <a href="galeri.html" class="hover:text-green-700">Galeri</a>
-      <a href="kontak.html" class="hover:text-green-700">Kontak</a>
-    </div>
-    
-    <a href="https://wa.me/6281527853990" target="_blank"
-       class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium">
-      <i class="fab fa-whatsapp"></i> 
-      <span class="hidden sm:inline">Hubungi Kami</span>
-    </a>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero -->
   <section class="hero-bg h-[70vh] flex items-center text-white">
@@ -65,68 +43,56 @@
     </div>
   </section>
 
-  <!-- Gallery Grid -->
+  <!-- Gallery -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center earthy-green mb-12">Dokumentasi Berusaha</h2>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Foto 1 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a26" 
-               alt="Perkebunan Nilam Lahendong" 
-               class="w-full h-64 object-cover">
+               alt="Perkebunan Nilam Lahendong" class="w-full h-64 object-cover">
           <div class="p-5">
             <p class="font-medium">Perkebunan Nilam di Lahendong</p>
           </div>
         </div>
 
-        <!-- Foto 2 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1622445275576-721325763afe" 
-               alt="Daun Nilam Segar" 
-               class="w-full h-64 object-cover">
+               alt="Daun Nilam Segar" class="w-full h-64 object-cover">
           <div class="p-5">
             <p class="font-medium">Daun Nilam Pilihan</p>
           </div>
         </div>
 
-        <!-- Foto 3 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c83137" 
-               alt="Proses Pengeringan" 
-               class="w-full h-64 object-cover">
+               alt="Proses Pengeringan" class="w-full h-64 object-cover">
           <div class="p-5">
-            <p class="font-medium">Proses Pengeringan Alami</p>
+            <p class="font-medium">Pengeringan Alami</p>
           </div>
         </div>
 
-        <!-- Foto 4 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" 
-               alt="Alat Penyulingan" 
-               class="w-full h-64 object-cover">
+               alt="Alat Penyulingan" class="w-full h-64 object-cover">
           <div class="p-5">
             <p class="font-medium">Mesin Penyulingan Steam</p>
           </div>
         </div>
 
-        <!-- Foto 5 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1605000792729-7a9c4c5c8f0f" 
-               alt="Minyak Nilam Jadi" 
-               class="w-full h-64 object-cover">
+               alt="Minyak Nilam Jadi" class="w-full h-64 object-cover">
           <div class="p-5">
             <p class="font-medium">Minyak Nilam Premium</p>
           </div>
         </div>
 
-        <!-- Foto 6 -->
         <div class="gallery-img bg-white rounded-3xl overflow-hidden shadow-lg">
           <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0" 
-               alt="Produk Kemasan" 
-               class="w-full h-64 object-cover">
+               alt="Produk Kemasan" class="w-full h-64 object-cover">
           <div class="p-5">
             <p class="font-medium">Produk Siap Kirim</p>
           </div>
@@ -136,22 +102,19 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
+  <!-- CTA -->
   <section class="bg-green-700 py-16 text-white">
     <div class="max-w-4xl mx-auto text-center px-6">
       <h2 class="text-4xl font-bold mb-6">Ingin Melihat Lebih Banyak?</h2>
-      <p class="text-xl mb-8">Kami siap mengirimkan foto dan video proses produksi terbaru</p>
-      <a href="https://wa.me/6281527853990" target="_blank"
-         class="inline-flex items-center gap-3 bg-white text-green-700 hover:bg-green-100 px-10 py-5 rounded-full text-xl font-semibold">
-        <i class="fab fa-whatsapp text-3xl"></i>
-        Minta Foto & Video via WA
+      <p class="text-xl mb-8">Kami siap mengirimkan foto dan video proses terbaru</p>
+      <a href="https://wa.me/6281527853990" target="_blank" class="inline-flex items-center gap-3 bg-white text-green-700 hover:bg-green-100 px-10 py-5 rounded-full text-xl font-semibold btn-primary">
+        <i class="fab fa-whatsapp text-3xl"></i> Minta Foto & Video
       </a>
     </div>
   </section>
 
   <!-- Floating WA -->
-  <a href="https://wa.me/6281527853990" target="_blank"
-     class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl text-3xl z-50">
+  <a href="https://wa.me/6281527853990" target="_blank" class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl text-3xl z-50">
     <i class="fab fa-whatsapp"></i>
   </a>
 
@@ -162,6 +125,5 @@
       <p class="mt-6">© 2026 Berusaha. Semua hak dilindungi.</p>
     </div>
   </footer>
-
 </body>
 </html>
