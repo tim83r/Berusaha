@@ -1,0 +1,63 @@
+/* ==================== styles.css ==================== */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Warna Utama */
+.earthy-green {
+    color: #166534;
+}
+
+.earthy-green-bg {
+    background-color: #166534;
+}
+
+/* Hero Background */
+.hero-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a26');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+nav {
+    transition: all 0.3s ease;
+}
+
+/* Card Hover Effect */
+.service-card, .gallery-img {
+    transition: all 0.4s ease;
+}
+
+.service-card:hover,
+.gallery-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Button */
+.btn-primary {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-bg {
+        background-attachment: scroll;
+    }
+}
+
+/* Form Styling */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #166534;
+    box-shadow: 0 0 0 3px rgba(22, 101, 52, 0.2);
+}
