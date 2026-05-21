@@ -44,11 +44,15 @@
       <p class="text-xl max-w-2xl mx-auto mb-10">Patchouli Alcohol tinggi • Kualitas Ekspor • Proses Terbaik</p>
       
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://wa.me/6281527853990" target="_blank" class="bg-white text-green-800 hover:bg-green-100 px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-3 btn-primary">
-          <i class="fab fa-whatsapp text-2xl"></i> Pesan Sekarang
+        <a href="https://wa.me/6281527853990" target="_blank" 
+           class="bg-white text-green-800 hover:bg-green-100 px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center gap-3 btn-primary">
+          <i class="fab fa-whatsapp text-2xl"></i> Pesan via WhatsApp
         </a>
-        <a href="proses.html" class="border-2 border-white hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold">
-          Lihat Proses Produksi
+        
+        <!-- Button Formspree -->
+        <a href="#formspree" 
+           class="border-2 border-white hover:bg-white/10 px-8 py-4 rounded-full text-lg font-semibold">
+          Dapatkan Penawaran Harga
         </a>
       </div>
     </div>
@@ -78,39 +82,34 @@
     </div>
   </section>
 
-  <!-- Formspree Section di Beranda -->
-  <section class="py-20 bg-white">
+  <!-- Formspree Section -->
+  <section id="formspree" class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold earthy-green mb-4">Hubungi Kami Langsung</h2>
-        <p class="text-gray-600">Kirim pesan atau permintaan penawaran harga</p>
+        <h2 class="text-4xl font-bold earthy-green mb-4">Dapatkan Penawaran Harga</h2>
+        <p class="text-gray-600">Isi form di bawah ini, kami akan segera menghubungi Anda</p>
       </div>
 
-      <form action="https://formspree.io/f/XXXXXXXXXX" method="POST" class="grid md:grid-cols-2 gap-6 bg-gray-50 p-10 rounded-3xl">
+      <form action="https://formspree.io/f/xredpgwd" method="POST" class="grid md:grid-cols-2 gap-6 bg-gray-50 p-10 rounded-3xl">
         <div>
           <label class="block text-sm font-medium mb-2">Nama Lengkap</label>
-          <input type="text" name="nama" required 
-                 class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
+          <input type="text" name="nama" required class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
         </div>
         <div>
           <label class="block text-sm font-medium mb-2">Email</label>
-          <input type="email" name="email" required 
-                 class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
+          <input type="email" name="email" required class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
         </div>
         <div class="md:col-span-2">
           <label class="block text-sm font-medium mb-2">Nomor WhatsApp</label>
-          <input type="tel" name="whatsapp" required 
-                 class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
+          <input type="tel" name="whatsapp" required class="w-full px-5 py-4 border border-gray-300 rounded-2xl focus:outline-none focus:border-green-600">
         </div>
         <div class="md:col-span-2">
           <label class="block text-sm font-medium mb-2">Pesan / Permintaan Harga</label>
-          <textarea name="pesan" rows="5" required 
-                    class="w-full px-5 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-green-600"></textarea>
+          <textarea name="pesan" rows="5" required class="w-full px-5 py-4 border border-gray-300 rounded-3xl focus:outline-none focus:border-green-600"></textarea>
         </div>
         <div class="md:col-span-2">
-          <button type="submit" 
-                  class="w-full bg-green-700 hover:bg-green-800 text-white py-5 rounded-2xl text-lg font-semibold btn-primary">
-            Kirim Pesan
+          <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white py-5 rounded-2xl text-lg font-semibold btn-primary">
+            Kirim Permintaan Harga
           </button>
         </div>
       </form>
